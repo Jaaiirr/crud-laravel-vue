@@ -36,11 +36,11 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-       $blog =  Blog::create($request->post());
-       return response()->json([
-        'blog' => $blog,
-        'mensaje'=> 'El registro se creo correctamente'
-       ]);
+        $blog = Blog::create($request->post());
+        return response()->json([
+            'blog' => $blog,
+            'mensaje' => 'El registro se creo correctamente',
+        ]);
     }
 
     /**
@@ -53,7 +53,7 @@ class BlogController extends Controller
     {
         return response()->json([
             'blog' => $blog,
-            'mensaje' => 'La solicitud se proceso correctamente'
+            'mensaje' => 'La solicitud se proceso correctamente',
         ]);
     }
 
@@ -80,7 +80,7 @@ class BlogController extends Controller
         $blog->fill($request->post())->save();
         return response()->json([
             'blog' => $blog,
-            'mensaje' => 'La solicitud se proceso correctamente'
+            'mensaje' => 'La solicitud se proceso correctamente',
         ]);
     }
 
@@ -94,8 +94,7 @@ class BlogController extends Controller
     {
         $blog->delete();
         return response()->json([
-            'blog' => $blog,
-            'mensaje' => 'La solicitud se proceso correctamente'
+            'mensaje' => 'La solicitud se proceso correctamente',
         ]);
     }
 }
