@@ -4,19 +4,30 @@
             <router-link
                 :to="{ name: 'crearBlog' }"
                 class="btn btn-success"
-                style="background-color:  #7D9D9C"
+                style="background-color: #7d9d9c"
                 >Agregar</router-link
             >
         </div>
         <div class="col-12 mt-4">
             <div class="table-responsive">
-                <table class="table table-bordered" style="background-color:#7D9D9C">
+                <table
+                    class="table table-bordered"
+                    style="background-color: #efead8"
+                >
                     <thead class="bg-dark text-white">
                         <tr>
-                            <th style="background-color:#7D9D9C">ID</th>
-                            <th style="background-color:#7D9D9C">Título</th>
-                            <th style="background-color:#7D9D9C">Contenido</th>
-                            <th style="background-color:#7D9D9C">Acciones</th>
+                            <th style="background-color: #7d9d9c; color: white">
+                                ID
+                            </th>
+                            <th style="background-color: #7d9d9c; color: white">
+                                Título
+                            </th>
+                            <th style="background-color: #7d9d9c; color: white">
+                                Contenido
+                            </th>
+                            <th style="background-color: #7d9d9c; color: white">
+                                Acciones
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -31,14 +42,22 @@
                                         params: { id: blog.id },
                                     }"
                                     class="btn btn-info"
-                                    >Editar</router-link
-                                >
+                                    style="
+                                        background-color: #d0c9c0;
+                                        border: none;
+                                    "
+                                    ><i class="fa-solid fa-pen"></i
+                                ></router-link>
                                 <a
                                     type="button"
                                     @click="eliminarBlog(blog.id)"
                                     class="btn btn-danger"
-                                    >Eliminar</a
-                                >
+                                    style="
+                                        background-color: #b25068;
+                                        border: none;
+                                    "
+                                    ><i class="fa-solid fa-trash-can"></i
+                                ></a>
                             </td>
                         </tr>
                     </tbody>

@@ -1,8 +1,10 @@
 <template>
     <main>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7D9D9C;">
+        <nav
+            class="navbar navbar-expand-lg navbar-dark"
+            style="background-color: #898AA6"
+        >
             <div class="container-fluid">
-               
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -10,7 +12,7 @@
                     data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent"
                     aria-expanded="false"
-                    aria-label="Toggle navigation" 
+                    aria-label="Toggle navigation"
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -33,7 +35,7 @@
                                 exact-active-class="active"
                                 to="/blogs"
                                 class="nav-link"
-                                >Blogs</router-link
+                                >To-Do</router-link
                             >
                         </li>
                         <li class="nav-item">
@@ -53,3 +55,7 @@
         </div>
     </main>
 </template>
+
+<script>
+export default {};
+</script>

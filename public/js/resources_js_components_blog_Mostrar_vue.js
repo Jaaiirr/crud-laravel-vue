@@ -69,6 +69,25 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "blogs",
   data: function data() {
@@ -212,7 +231,7 @@ var render = function () {
           "router-link",
           {
             staticClass: "btn btn-success",
-            staticStyle: { "background-color": "#7D9D9C" },
+            staticStyle: { "background-color": "#7d9d9c" },
             attrs: { to: { name: "crearBlog" } },
           },
           [_vm._v("Agregar")]
@@ -227,7 +246,7 @@ var render = function () {
           "table",
           {
             staticClass: "table table-bordered",
-            staticStyle: { "background-color": "#7D9D9C" },
+            staticStyle: { "background-color": "#efead8" },
           },
           [
             _vm._m(0),
@@ -249,6 +268,10 @@ var render = function () {
                         "router-link",
                         {
                           staticClass: "btn btn-info",
+                          staticStyle: {
+                            "background-color": "#d0c9c0",
+                            border: "none",
+                          },
                           attrs: {
                             to: {
                               name: "editarBlog",
@@ -256,13 +279,17 @@ var render = function () {
                             },
                           },
                         },
-                        [_vm._v("Editar")]
+                        [_c("i", { staticClass: "fa-solid fa-pen" })]
                       ),
                       _vm._v(" "),
                       _c(
                         "a",
                         {
                           staticClass: "btn btn-danger",
+                          staticStyle: {
+                            "background-color": "#b25068",
+                            border: "none",
+                          },
                           attrs: { type: "button" },
                           on: {
                             click: function ($event) {
@@ -270,7 +297,7 @@ var render = function () {
                             },
                           },
                         },
-                        [_vm._v("Eliminar")]
+                        [_c("i", { staticClass: "fa-solid fa-trash-can" })]
                       ),
                     ],
                     1
@@ -292,21 +319,41 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("thead", { staticClass: "bg-dark text-white" }, [
       _c("tr", [
-        _c("th", { staticStyle: { "background-color": "#7D9D9C" } }, [
-          _vm._v("ID"),
-        ]),
+        _c(
+          "th",
+          { staticStyle: { "background-color": "#7d9d9c", color: "white" } },
+          [_vm._v("\n                            ID\n                        ")]
+        ),
         _vm._v(" "),
-        _c("th", { staticStyle: { "background-color": "#7D9D9C" } }, [
-          _vm._v("Título"),
-        ]),
+        _c(
+          "th",
+          { staticStyle: { "background-color": "#7d9d9c", color: "white" } },
+          [
+            _vm._v(
+              "\n                            Título\n                        "
+            ),
+          ]
+        ),
         _vm._v(" "),
-        _c("th", { staticStyle: { "background-color": "#7D9D9C" } }, [
-          _vm._v("Contenido"),
-        ]),
+        _c(
+          "th",
+          { staticStyle: { "background-color": "#7d9d9c", color: "white" } },
+          [
+            _vm._v(
+              "\n                            Contenido\n                        "
+            ),
+          ]
+        ),
         _vm._v(" "),
-        _c("th", { staticStyle: { "background-color": "#7D9D9C" } }, [
-          _vm._v("Acciones"),
-        ]),
+        _c(
+          "th",
+          { staticStyle: { "background-color": "#7d9d9c", color: "white" } },
+          [
+            _vm._v(
+              "\n                            Acciones\n                        "
+            ),
+          ]
+        ),
       ]),
     ])
   },
