@@ -92,7 +92,7 @@ export default {
         eliminarBlog(id) {
             if (confirm("Desea eliminar el registro")) {
                 this.axios
-                    .deleted(`/api/blog/${id}`)
+                    .delete(`/api/blog/${id}`)
                     .then((res) => {
                         this.mostrarblogs();
                     })
